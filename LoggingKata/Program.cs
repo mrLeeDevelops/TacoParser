@@ -12,7 +12,7 @@ namespace LoggingKata
 
         static void Main(string[] args)
         {
-            // TODO:  Find the two Taco Bells that are the furthest from one another.
+            // TODO:  Find the two Taco Bells that are the farthest from one another.
             // HINT:  You'll need two nested forloops ---------------------------
 
             logger.LogInfo("Log initialized");
@@ -30,7 +30,7 @@ namespace LoggingKata
             var locations = lines.Select(parser.Parse).ToArray();
 
             // DON'T FORGET TO LOG YOUR STEPS
-
+            logger.LogInfo("Taking Steps...");
             // Now that your Parse method is completed, START BELOW ----------
 
             // TODO: Create two `ITrackable` variables with initial values of `null`. These will be used to store your two taco bells that are the farthest from each other.
