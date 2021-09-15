@@ -84,11 +84,14 @@ namespace LoggingKata
                         tacoTrackable = locA;
                         tacoTrackable2 = locB;
                     }
+
                 }
             }
 
             // Once you've looped through everything, you've found the two Taco Bells farthest away from each other.
-            logger.LogInfo($"{tacoTrackable.Name} and {tacoTrackable2.Name} are the two Taco Bell locations farthest away from each other.");
+            Console.WriteLine($"{tacoTrackable.Name} and {tacoTrackable2.Name} are the two Taco Bell locations farthest away from each other.");
+            Console.WriteLine($"The actual distance between {tacoTrackable.Name} and {tacoTrackable2.Name} is {Math.Round(distance*0.00062)} miles.");
         }
     }
 }
+       
